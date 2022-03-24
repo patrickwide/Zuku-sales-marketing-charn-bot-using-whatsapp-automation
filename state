@@ -1,0 +1,105 @@
+
+
+
+
+
+
+
+
+
+
+// const qrcode = require('qrcode-terminal');
+
+// //request package
+// const { Client } = require('whatsapp-web.js');
+// const client = new Client();
+
+// // generate qr code
+// client.on('qr', qr => {
+//     qrcode.generate(qr, {small: true});
+// });
+
+// //when the qrcode is scanned
+// client.on('ready', () => {
+// 	// //get data from the python data server
+// 	// const spawn = require('child_process').spawn;
+// 	// const data = "true"
+// 	// let stringifiedData = JSON.stringify(data);
+// 	// const py = spawn('python', ['server.py', stringifiedData]);
+
+// 	// resultString = '';
+	
+// 	// py.stdout.on('data', function (stdData) {
+// 	// 	resultString += stdData.toString();
+// 	// });
+// 	// py.stdout.on('end', function () {
+// 	// 	// console.log(resultData);
+// 	// 	let resultData = JSON.parse(resultString);
+// 	// 	let persons = resultData['data'];
+	
+// 	// 	var person_count = persons.length
+//     //     var i = 0
+
+// 	// 	while (i < person_count) {
+//     //         // var name = persons[i][0]
+//     //         var phone = persons[i][0]
+//     //         var message = persons[i][1]
+
+// 	// 		//code to edit the phone numbers
+// 	// 		const chatId = "254"+ phone+"@c.us";
+// 	// 		// Sending message.
+// 	// 		// const { MessageMedia } = require('whatsapp-web.js');
+// 	// 		// const media = MessageMedia.fromFilePath('50%_card.png');
+// 	// 		// client.sendMessage(chatId,media)
+//     //         client.sendMessage(chatId, message);
+
+//     //         console.log(`Sent to 0${phone}`);
+// 	// 		i++;
+// 	// 	}
+// 	// 	console.log("Sending...");
+// 	// });
+
+// });
+
+// client.initialize();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import sys, json
+// import pandas as pd
+// import numpy as np
+// data = pd.read_csv("pato.csv")
+// df = pd.DataFrame(data)
+
+
+// df = df[["Contacts","Content"]]
+
+// # result = df.to_numpy()
+// result =[
+//         ['John', 723116674,"word"],
+//         ['Tom', 723116674,"word"],
+//         ['Mary', 723116674,"word"]
+//         ]
+
+// at = json.loads(sys.argv[1])
+
+// # if len(at) > 1:
+// #         result = result
+// # else:
+// #         result = None
+
+// newdata = {'data':result}
+// print(json.dumps(newdata))
+

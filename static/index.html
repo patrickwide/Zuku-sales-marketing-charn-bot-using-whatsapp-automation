@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        
+
+    </style>
+</head>
+<body>
+    <div class="qr-code-generator">
+    
+        <input type="text" class="qr-url" placeholder="URL or Text">
+        <input type="number" class="qr-size" value="128" min="100" max="1000">
+    
+        <button class="generate-qr-code">Generate</button>
+    
+        <br>
+    
+        <div id="qrcode"></div>
+    
+    </div>
+</body>
+<script>
+ 
+    $('.generate-qr-code').on('click', function () {
+
+        // Clear Previous QR Code
+        $('#qrcode').empty();
+
+        // Set Size to Match User Input
+        $('#qrcode').css({
+            'width': $('.qr-size').val(),
+            'height': $('.qr-size').val()
+        })
+
+        // Generate and Output QR Code
+        $('#qrcode').qrcode({ width: $('.qr-size').val(), height: $('.qr-size').val(), text: $('.qr-url').val() });
+
+    });
+   
+</script>
+</html>
